@@ -1,0 +1,104 @@
+@import 'colors/colors.scss';
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: $cor-fundo-tela;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    font-size: 1.3rem;
+    font-weight: 600;
+    box-shadow: 0px 2px 15px 10px rgb(153, 153, 153, 0.2);
+    border-width: 0px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: $cor-botao;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: $fundo-botao-hover;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: $cor-fundo-calc;
+    border:2px solid rgb(153, 153, 153); 
+    border-radius: 20px;
+    height: auto;
+    width: 300px;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .container .resultado {
+    margin: 10px 0px;
+    align-content: center;
+  }
+
+  .container .resultado #resultado {
+    text-align: right;
+    width: 100%;
+    height: 3rem;
+    border-radius: 7px;
+    border-width: 0px;
+    border-color:rgba(61, 61, 61, 0.2);
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .container .teclado {
+    display: grid;
+    grid-template-columns: 80% 15%;
+    gap: 8px;
+  }
+
+  .container .teclado .numeros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .container .teclado .operadores {
+    display: grid;
+    gap: 5px;
+  }
+  
+  #btn0 {
+      text-align: left;
+      padding-left: 25px;
+      grid-column-start: 1;
+      grid-column-end: 3;
+  }
+  
+  .container .teclado .operadores button {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* EDIÇÃO */
+  .bg-color {
+    background-color: $cor-fundo-calc;
+  }
+  
+  .cor-bot {
+    color:$cor-numeros;
+  }
+  
+  .cor-bot2 {
+    color: $letra-operadores;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

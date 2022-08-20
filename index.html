@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="resultado">
+            <input type="text" name="resultado" id="resultado" value="0" display only>
+        </div>
+
+        <div class="teclado"> 
+            <div class="numeros bg-color">
+                <button class="cor-bot" id="btnClear" onclick="clearAll()">C</button>
+                <button class="cor-bot" id="btnInverteSinal" onclick="inverterSinal()">+/-</button>
+                <button class="cor-bot" id="btnPorcentagem" value="%" onclick="setOperation(value)">%</button>
+                <button class="cor-bot" id="btn7" value="7" onclick="digitaNumero(value)">7</button>
+                <button class="cor-bot" id="btn8" value="8" onclick="digitaNumero(value)">8</button>
+                <button class="cor-bot" id="btn9" value="9" onclick="digitaNumero(value)">9</button>
+                <button class="cor-bot" id="btn4" value="4" onclick="digitaNumero(value)">4</button>
+                <button class="cor-bot" id="btn5" value="5" onclick="digitaNumero(value)">5</button>
+                <button class="cor-bot" id="btn6" value="6" onclick="digitaNumero(value)">6</button>
+                <button class="cor-bot" id="btn1" value="1" onclick="digitaNumero(value)">1</button>
+                <button class="cor-bot" id="btn2" value="2" onclick="digitaNumero(value)">2</button>
+                <button class="cor-bot" id="btn3" value="3" onclick="digitaNumero(value)">3</button>
+                <button class="cor-bot" id="btn0" value="0" onclick="digitaNumero(value)">0</button>
+                <button class="cor-bot" id="btnDecimal" value="." onclick="digitaNumero(value)">.</button>
+            </div>
+            <div class="operadores bg-color">
+                <button class="cor-bot2" id="btnDividir" value="/" onclick="setOperation(value)">÷</button>
+                <button class="cor-bot2" id="btnMultiplicar" value="*" onclick="setOperation(value)">x</button>
+                <button class="cor-bot2" id="btnSubtrair" value="-" onclick="setOperation(value)">-</button>
+                <button class="cor-bot2" id="btnSomar" value="+" onclick="setOperation(value)">+</button>
+                <button class="cor-bot2" id="btnResultado" value="=" onclick="setOperation(value)">=</button>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script src="js/javascript.js"></script>
+
+</body>
+</html>
